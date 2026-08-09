@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System — Switchback Strategy</title>
+<meta name="description" content="Tokens, components, and rules for the Switchback Strategy brand: color, typography, trail-grade wayfinding, controls, and app scaling notes.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F4F2ED;-webkit-font-smoothing:antialiased}
+a{color:#2F4B96;text-decoration:none}
+a:hover{color:#C8102E}
+.hv-primary:hover{background:#C8102E !important}
+.hv-secondary:hover{background:#14213A !important;color:#F4F2ED !important}
+@media (max-width:900px){
+  [style*="display:grid"]{grid-template-columns:1fr !important}
+  [style*="padding:64px 72px"],[style*="padding:56px 72px"],[style*="padding:72px"]{padding-left:22px !important;padding-right:22px !important}
+  [style*="font:800 64px"]{font-size:clamp(34px,8vw,56px) !important}
+  [style*="font:800 34px"]{font-size:clamp(26px,5.5vw,34px) !important}
+  [style*="font-size:64px"]{font-size:clamp(34px,8vw,56px) !important}
+  [style*="font-size:36px"]{font-size:clamp(25px,5.4vw,36px) !important}
+}
+</style>
+</head>
+<body>
+<div style="background:#0E1729;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em">
+<a href="../" style="color:#F4F2ED">&#8592; SWITCHBACKSTRATEGY.AI</a>
+<div style="display:flex;gap:20px;flex-wrap:wrap"><a href="../design-system/" style="color:#EE7A82">DESIGN SYSTEM</a><a href="../logo/" style="color:#7A8CAB">LOGO</a><a href="../brand/" style="color:#7A8CAB">VOICE</a><a href="../pro-bono/" style="color:#7A8CAB">PRO BONO</a></div></div>
+<div style="font-family:'Public Sans',system-ui,sans-serif;color:#14213A;background:#F4F2ED">
+
+<div style="background:#14213A;padding:56px 72px 52px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;align-items:center;gap:14px">
+<div style="width:44px;flex:none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.6 62.6" style="display:block;width:100%;height:auto" role="img" aria-label="Switchback Strategy compact mark"><circle cx="8.5" cy="54.1" r="8.5" fill="#F4F2ED"/><circle cx="23.5" cy="39.1" r="8.5" fill="#F4F2ED"/><circle cx="38.5" cy="24.1" r="8.5" fill="#F4F2ED"/><path d="M51.6 0 L55.1 7.5 L62.6 11 L55.1 14.5 L51.6 22 L48.1 14.5 L40.6 11 L48.1 7.5 Z" fill="#EE7A82"/></svg></div>
+<div style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.1em;color:#F4F2ED">SWITCHBACK STRATEGY</div>
+</div>
+<div style="font:800 64px/.98 Archivo,sans-serif;letter-spacing:-.025em;color:#F4F2ED">Design System</div>
+<div style="font:400 19px/1.5 'Public Sans',sans-serif;color:#9FB0D0;max-width:56ch">Trail-signage clarity applied to AI training, onboarding, and workflow consulting. One set of tokens, components, and rules for the website today and the client app next.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;text-align:right">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#EE7A82">DIRECTION 1A · TRAILSIDE SIGNAGE</div>
+<div style="font:400 13px/1.6 'IBM Plex Mono',monospace;color:#7A8CAB">v1.0 · July 2026<br>switchbackstrategy.ai</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">01 — PRINCIPLES</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:32px">Signage, not decoration</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px">
+<div style="border-top:3px solid #14213A;padding-top:16px">
+<div style="font:700 17px/1.3 Archivo,sans-serif;padding-bottom:8px">Flat and legible</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Solid fills, hard edges, real contrast. No gradients, no glassmorphism, no drop shadows deeper than 2px.</div>
+</div>
+<div style="border-top:3px solid #2E6B4F;padding-top:16px">
+<div style="font:700 17px/1.3 Archivo,sans-serif;padding-bottom:8px">Graded, not hyped</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Difficulty is stated plainly, the way a trail sign does it. Confidence comes from specificity, never from superlatives.</div>
+</div>
+<div style="border-top:3px solid #2F4B96;padding-top:16px">
+<div style="font:700 17px/1.3 Archivo,sans-serif;padding-bottom:8px">Momentum in the layout</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Sequence and progress are visible: numbered stages, left-to-right rise, one clear next turn on every screen.</div>
+</div>
+<div style="border-top:3px solid #C8102E;padding-top:16px">
+<div style="font:700 17px/1.3 Archivo,sans-serif;padding-bottom:8px">Red means go</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Crimson is the summit marker — one use per view, on the single most important action or figure.</div>
+</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">01B — LOGO</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:8px">The mark</div>
+<div style="font:400 16px/1.55 'Public Sans',sans-serif;color:#4A5468;max-width:74ch;padding-bottom:32px">Nine circles on one baseline — three legs of two, three and four, each peaking one step higher than the last — then the summit star. Green is the flow trail, blue the singletrack, navy the expert line; the red star is the Pro-Line marker and the only red on any surface it appears on. Full specimen sheet, lockups, and swag variants live in <a href="../logo/">Logo System</a>.</div>
+<div style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr);gap:20px;padding-bottom:28px">
+<div style="border:1px solid #DDD9D0;background:#fff;padding:32px;display:flex;flex-direction:column;gap:20px;justify-content:space-between">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.5 77.5" style="display:block;width:100%;height:auto" role="img" aria-label="Switchback Strategy mark"><circle cx="8.5" cy="69" r="8.5" fill="#2E6B4F"/><circle cx="23.5" cy="54" r="8.5" fill="#2E6B4F"/><circle cx="48.5" cy="69" r="8.5" fill="#2F4B96"/><circle cx="63.5" cy="54" r="8.5" fill="#2F4B96"/><circle cx="78.5" cy="39" r="8.5" fill="#2F4B96"/><circle cx="88.5" cy="69" r="8.5" fill="#14213A"/><circle cx="103.5" cy="54" r="8.5" fill="#14213A"/><circle cx="118.5" cy="39" r="8.5" fill="#14213A"/><circle cx="133.5" cy="24" r="8.5" fill="#14213A"/><path d="M146.5 0 L150 7.5 L157.5 11 L150 14.5 L146.5 22 L143 14.5 L135.5 11 L143 7.5 Z" fill="#C8102E"/></svg>
+<div style="font:600 11px/1.6 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#8A8375">PRIMARY · 2.03:1 · 46PX SCREEN / 72PX PRINT</div>
+</div>
+<div style="border:1px solid #DDD9D0;background:#fff;padding:32px;display:flex;flex-direction:column;gap:20px;justify-content:space-between;align-items:flex-start">
+<div style="width:140px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.6 62.6" style="display:block;width:100%;height:auto" role="img" aria-label="Switchback Strategy compact mark"><circle cx="8.5" cy="54.1" r="8.5" fill="#2E6B4F"/><circle cx="23.5" cy="39.1" r="8.5" fill="#2F4B96"/><circle cx="38.5" cy="24.1" r="8.5" fill="#14213A"/><path d="M51.6 0 L55.1 7.5 L62.6 11 L55.1 14.5 L51.6 22 L48.1 14.5 L40.6 11 L48.1 7.5 Z" fill="#C8102E"/></svg></div>
+<div style="font:600 11px/1.6 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#8A8375">COMPACT · 1:1 · 37PX SCREEN / 59PX PRINT</div>
+</div>
+<div style="border:1px solid #14213A;background:#14213A;padding:32px;display:flex;flex-direction:column;gap:20px;justify-content:space-between;align-items:flex-start">
+<div style="width:140px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.6 62.6" style="display:block;width:100%;height:auto" role="img" aria-label="Switchback Strategy compact mark"><circle cx="8.5" cy="54.1" r="8.5" fill="#F4F2ED"/><circle cx="23.5" cy="39.1" r="8.5" fill="#F4F2ED"/><circle cx="38.5" cy="24.1" r="8.5" fill="#F4F2ED"/><path d="M51.6 0 L55.1 7.5 L62.6 11 L55.1 14.5 L51.6 22 L48.1 14.5 L40.6 11 L48.1 7.5 Z" fill="#EE7A82"/></svg></div>
+<div style="font:600 11px/1.6 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#9FB0D0">ON NAVY · PAPER CIRCLES · BLAZE LIGHT STAR</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px">
+<div style="border-top:3px solid #C8102E;padding-top:16px">
+<div style="font:700 17px/1.3 Archivo,sans-serif;padding-bottom:8px">Never tighten the legs</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Legs sit 40 units apart against 21 within a leg. Close that gap and the silhouette collapses into a sawtooth. Check every change in one color first.</div>
+</div>
+<div style="border-top:3px solid #2F4B96;padding-top:16px">
+<div style="font:700 17px/1.3 Archivo,sans-serif;padding-bottom:8px">Floors follow the circle</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">16px of circle for anything physical, 10px on screen. Below either floor, the star goes on alone — four elements will not survive an icon.</div>
+</div>
+<div style="border-top:3px solid #2E6B4F;padding-top:16px">
+<div style="font:700 17px/1.3 Archivo,sans-serif;padding-bottom:8px">One red per surface</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">The star always wins the crimson. If a page already has a crimson CTA, the logo goes navy or paper on that page.</div>
+</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0;background:#fff">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">02 — COLOR</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:8px">Palette &amp; tokens</div>
+<div style="font:400 16px/1.55 'Public Sans',sans-serif;color:#4A5468;max-width:70ch;padding-bottom:32px">Five brand colors pulled from the logo, plus a neutral ramp. Green, blue, and red carry trail-grade meaning and should not be used decoratively.</div>
+
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding-bottom:36px">
+<div><div style="height:120px;background:#14213A"></div><div style="padding-top:12px"><div style="font:700 15px/1.2 Archivo,sans-serif">Summit Navy</div><div style="font:400 12.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558">--sbs-navy<br>#14213A<br>oklch(.25 .06 262)</div><div style="font:400 13px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Primary ink, headers, dark bands, primary button fill.</div></div></div>
+<div><div style="height:120px;background:#2F4B96"></div><div style="padding-top:12px"><div style="font:700 15px/1.2 Archivo,sans-serif">Intermediate Blue</div><div style="font:400 12.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558">--sbs-blue<br>#2F4B96<br>oklch(.44 .13 267)</div><div style="font:400 13px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Links, focus rings, intermediate trail grade.</div></div></div>
+<div><div style="height:120px;background:#2E6B4F"></div><div style="padding-top:12px"><div style="font:700 15px/1.2 Archivo,sans-serif">Beginner Green</div><div style="font:400 12.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558">--sbs-green<br>#2E6B4F<br>oklch(.48 .09 158)</div><div style="font:400 13px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Success, shipped status, easiest trail grade.</div></div></div>
+<div><div style="height:120px;background:#C8102E"></div><div style="padding-top:12px"><div style="font:700 15px/1.2 Archivo,sans-serif">Pro Line Red</div><div style="font:400 12.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558">--sbs-red<br>#C8102E<br>oklch(.52 .21 25)</div><div style="font:400 13px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Summit accent. One per view. Also expert grade and errors.</div></div></div>
+<div><div style="height:120px;background:#F4F2ED;border:1px solid #DDD9D0"></div><div style="padding-top:12px"><div style="font:700 15px/1.2 Archivo,sans-serif">Trail Paper</div><div style="font:400 12.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558">--sbs-paper<br>#F4F2ED<br>oklch(.96 .006 85)</div><div style="font:400 13px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Default page background. Warm, never pure white.</div></div></div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:1px solid #DDD9D0">
+<div style="background:#fff;padding:18px 14px"><div style="height:34px;background:#fff;border:1px solid #DDD9D0"></div><div style="font:400 11.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558;padding-top:10px">--surface<br>#FFFFFF</div></div>
+<div style="background:#fff;padding:18px 14px"><div style="height:34px;background:#E9E6DE"></div><div style="font:400 11.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558;padding-top:10px">--paper-2<br>#E9E6DE</div></div>
+<div style="background:#fff;padding:18px 14px"><div style="height:34px;background:#DDD9D0"></div><div style="font:400 11.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558;padding-top:10px">--rule<br>#DDD9D0</div></div>
+<div style="background:#fff;padding:18px 14px"><div style="height:34px;background:#8A8375"></div><div style="font:400 11.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558;padding-top:10px">--muted<br>#8A8375</div></div>
+<div style="background:#fff;padding:18px 14px"><div style="height:34px;background:#4A5468"></div><div style="font:400 11.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558;padding-top:10px">--body<br>#4A5468</div></div>
+<div style="background:#fff;padding:18px 14px"><div style="height:34px;background:#9FB0D0"></div><div style="font:400 11.5px/1.7 'IBM Plex Mono',monospace;color:#6B6558;padding-top:10px">--on-navy<br>#9FB0D0</div></div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0;background:#fff">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">02B — CONTRAST RULES</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:8px">Crimson never sits on a color</div>
+<div style="font:400 16px/1.55 'Public Sans',sans-serif;color:#4A5468;max-width:74ch;padding-bottom:32px">Crimson, blue, and green are all mid-lightness, so any two of them together fail WCAG AA. Crimson is legible on paper and on white only. On navy, green, or blue, swap in Blaze Light — the same hue lifted to 80% lightness. Never place a tier color on another tier color.</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-bottom:28px">
+<div style="border:1px solid #DDD9D0"><div style="background:#14213A;padding:22px"><div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#C8102E">CRIMSON ON NAVY</div></div><div style="padding:16px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#C8102E;padding-bottom:8px">AVOID · 2.6:1</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468">Fails at every size.</div></div></div>
+<div style="border:1px solid #DDD9D0"><div style="background:#14213A;padding:22px"><div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#EE7A82">BLAZE LIGHT ON NAVY</div></div><div style="padding:16px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#2E6B4F;padding-bottom:8px">USE · 5.2:1</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468">--sbs-red-light #EE7A82 for all accent text and small marks on navy.</div></div></div>
+<div style="border:1px solid #DDD9D0"><div style="background:#2E6B4F;padding:22px"><div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#C8102E">CRIMSON ON GREEN</div></div><div style="padding:16px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#C8102E;padding-bottom:8px">NEVER · 1.4:1</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468">Also unreadable for red-green color deficiency. Separate them with paper or navy.</div></div></div>
+<div style="border:1px solid #DDD9D0"><div style="background:#2F4B96;padding:22px"><div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#F4F2ED">PAPER ON BLUE</div></div><div style="padding:16px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#2E6B4F;padding-bottom:8px">USE · 6.8:1</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468">On any tier color, text is paper or white — never another tier color.</div></div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;border-top:1px solid #DDD9D0;padding-top:26px">
+<div style="font:400 13px/1.9 'IBM Plex Mono',monospace;color:#6B6558">--sbs-red:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#C8102E&nbsp;&nbsp;·&nbsp;on paper / white only<br>--sbs-red-light: #EE7A82&nbsp;&nbsp;·&nbsp;on navy — text &amp; small marks<br>--sbs-green-light: #7FBF9F&nbsp;·&nbsp;success text on navy<br>--sbs-blue-light: #9FB0D0&nbsp;&nbsp;·&nbsp;body text on navy</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Targets: 4.5:1 for text under 24px, 3:1 for display figures and UI borders. Pure crimson stays legal as a <em>fill</em> behind white text (4.9:1) and as a 4px tier border, where it reads as a graphic rather than as type. Tier meaning always survives in shape and label, so a color that has to be lightened for contrast never costs meaning.</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">03 — TYPOGRAPHY</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:32px">Three families, strict roles</div>
+<div style="display:grid;grid-template-columns:1.4fr 1fr;gap:48px">
+<div style="display:flex;flex-direction:column;gap:26px">
+<div style="border-bottom:1px solid #DDD9D0;padding-bottom:22px">
+<div style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#8A8375;padding-bottom:12px">DISPLAY / H1 — ARCHIVO 800 · 64px · -2.5% · 0.98</div>
+<div style="font:800 64px/.98 Archivo,sans-serif;letter-spacing:-.025em">Steep climbs, structured</div>
+</div>
+<div style="border-bottom:1px solid #DDD9D0;padding-bottom:22px">
+<div style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#8A8375;padding-bottom:12px">H2 — ARCHIVO 800 · 34px</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em">How an engagement unfolds</div>
+</div>
+<div style="border-bottom:1px solid #DDD9D0;padding-bottom:22px">
+<div style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#8A8375;padding-bottom:12px">H3 — ARCHIVO 700 · 20px</div>
+<div style="font:700 20px/1.25 Archivo,sans-serif">Team AI Training Sprint</div>
+</div>
+<div style="border-bottom:1px solid #DDD9D0;padding-bottom:22px">
+<div style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#8A8375;padding-bottom:12px">BODY — PUBLIC SANS 400 · 17px · 1.6</div>
+<div style="font:400 17px/1.6 'Public Sans',sans-serif;color:#4A5468;max-width:62ch">We start from operational pain — slow processes, manual handoffs, unclear ownership — never from a tool catalog. Each engagement is scoped, shippable, and momentum-preserving.</div>
+</div>
+<div>
+<div style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#8A8375;padding-bottom:12px">EYEBROW / LABEL — IBM PLEX MONO 600 · 12px · +14% · UPPER</div>
+<div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#C8102E">STAGE 02 · TRAINING SPRINTS</div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #DDD9D0;padding:28px">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#8A8375;padding-bottom:18px">RULES</div>
+<div style="display:flex;flex-direction:column;gap:14px;font:400 14.5px/1.5 'Public Sans',sans-serif;color:#4A5468">
+<div><strong style="color:#14213A">Archivo</strong> for headings, buttons, nav, and numbers. Never below 700 weight at display sizes.</div>
+<div><strong style="color:#14213A">Public Sans</strong> for all body copy and long-form UI text. 17px web, 16px minimum in app.</div>
+<div><strong style="color:#14213A">IBM Plex Mono</strong> for eyebrows, metric captions, timestamps, prices in tables, and code. Always uppercase with +0.14em tracking when used as a label.</div>
+<div>Max line length 68 characters. Body never below 15px on web, 16px in app.</div>
+<div>Sentence case for headings; uppercase only for mono labels and buttons.</div>
+</div>
+<div style="border-top:1px solid #DDD9D0;margin-top:22px;padding-top:18px;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#6B6558">--type-h1: 64px<br>--type-h2: 34px<br>--type-h3: 20px<br>--type-body: 17px<br>--type-small: 15px<br>--type-label: 12px</div>
+</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0;background:#fff">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">04 — WAYFINDING</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:8px">Trail grades &amp; markers</div>
+<div style="font:400 16px/1.55 'Public Sans',sans-serif;color:#4A5468;max-width:70ch;padding-bottom:32px">The core brand device: standard trail-difficulty shapes carry service tier, complexity, and status. Shape plus color plus label — never color alone.</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+<div style="border:1px solid #DDD9D0;padding:24px;display:flex;flex-direction:column;gap:14px">
+<div style="width:26px;height:26px;border-radius:50%;background:#2E6B4F"></div>
+<div><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2E6B4F;padding-bottom:8px">GREEN · EASY</div><div style="font:700 18px/1.25 Archivo,sans-serif">Readiness Trailmap</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Audit &amp; roadmap. Low risk, fast clarity.</div></div>
+</div>
+<div style="border:1px solid #DDD9D0;padding:24px;display:flex;flex-direction:column;gap:14px">
+<div style="width:24px;height:24px;background:#2F4B96"></div>
+<div><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2F4B96;padding-bottom:8px">BLUE · INTERMEDIATE</div><div style="font:700 18px/1.25 Archivo,sans-serif">Team AI Training</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Hands-on workshops, built around real tools and tasks.</div></div>
+</div>
+<div style="border:1px solid #DDD9D0;padding:24px;display:flex;flex-direction:column;gap:14px">
+<div style="width:22px;height:22px;background:#14213A;transform:rotate(45deg);margin:2px 0"></div>
+<div><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#14213A;padding-bottom:8px">BLACK · ADVANCED</div><div style="font:700 18px/1.25 Archivo,sans-serif">Workflow Optimization</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Process redesign and automation build.</div></div>
+</div>
+<div style="border:1px solid #DDD9D0;padding:24px;display:flex;flex-direction:column;gap:14px">
+<div style="width:22px;height:22px;background:#C8102E;transform:rotate(45deg);margin:2px 0"></div>
+<div><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#C8102E;padding-bottom:8px">PRO-LINE</div><div style="font:700 18px/1.25 Archivo,sans-serif">Fractional AI Advisor</div><div style="font:400 14px/1.5 'Public Sans',sans-serif;color:#4A5468;padding-top:8px">Ongoing coaching on retainer.</div></div>
+</div>
+</div>
+
+<div style="padding-top:40px">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#8A8375;padding-bottom:18px">STAGE TRACK — PROGRESS PATTERN (WEB + APP)</div>
+<div style="border:1px solid #DDD9D0;background:#F4F2ED;padding:28px">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0">
+<div style="border-top:4px solid #2E6B4F;padding:16px 20px 0 0"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#2E6B4F">00 · COMPLETE</div><div style="font:700 17px/1.3 Archivo,sans-serif;padding-top:8px">Trailmap Session</div></div>
+<div style="border-top:4px solid #2E6B4F;padding:16px 20px 0 0"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#2E6B4F">01 · COMPLETE</div><div style="font:700 17px/1.3 Archivo,sans-serif;padding-top:8px">Readiness Trailmap</div></div>
+<div style="border-top:4px solid #C8102E;padding:16px 20px 0 0"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#C8102E">02 · IN PROGRESS</div><div style="font:700 17px/1.3 Archivo,sans-serif;padding-top:8px">Training Sprint — Campaign Team</div></div>
+<div style="border-top:4px solid #DDD9D0;padding:16px 0 0 0"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#8A8375">03 · UPCOMING</div><div style="font:700 17px/1.3 Archivo,sans-serif;padding-top:8px;color:#8A8375">Pro-Line</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">05 — CONTROLS</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:32px">Buttons, inputs, form</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+
+<div style="display:flex;flex-direction:column;gap:28px">
+<div>
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#8A8375;padding-bottom:16px">BUTTONS — 0 RADIUS, ARCHIVO 700, +5% TRACKING</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+<div style="background:#14213A;color:#F4F2ED;font:700 14px/1 Archivo,sans-serif;letter-spacing:.05em;padding:17px 26px" class="hv-primary">BOOK A FREE HOUR</div>
+<div style="border:2px solid #14213A;color:#14213A;font:700 14px/1 Archivo,sans-serif;letter-spacing:.05em;padding:15px 24px" class="hv-secondary">SEE THE TRAIL MAP</div>
+<div style="color:#2F4B96;font:700 14px/1 Archivo,sans-serif;letter-spacing:.05em;padding:15px 4px;border-bottom:2px solid #2F4B96">READ THE METHOD</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding-top:12px">
+<div style="background:#C8102E;color:#fff;font:700 14px/1 Archivo,sans-serif;letter-spacing:.05em;padding:17px 26px">SUMMIT CTA — ONE PER PAGE</div>
+<div style="background:#DDD9D0;color:#8A8375;font:700 14px/1 Archivo,sans-serif;letter-spacing:.05em;padding:17px 26px">DISABLED</div>
+</div>
+<div style="font:400 13.5px/1.6 'Public Sans',sans-serif;color:#4A5468;padding-top:14px">Primary hover fills crimson. Secondary hover inverts to navy. Focus is a 3px Blue Square ring at 2px offset, never removed. Minimum target 44×44 in app contexts.</div>
+</div>
+<div>
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#8A8375;padding-bottom:16px">SIZES</div>
+<div style="display:flex;gap:12px;align-items:center">
+<div style="background:#14213A;color:#F4F2ED;font:700 12px/1 Archivo,sans-serif;letter-spacing:.05em;padding:11px 16px">SM · 36px</div>
+<div style="background:#14213A;color:#F4F2ED;font:700 14px/1 Archivo,sans-serif;letter-spacing:.05em;padding:14px 22px">MD · 44px</div>
+<div style="background:#14213A;color:#F4F2ED;font:700 15px/1 Archivo,sans-serif;letter-spacing:.05em;padding:18px 28px">LG · 52px</div>
+</div>
+</div>
+<div>
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#8A8375;padding-bottom:16px">CHIPS &amp; STATUS</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<div style="background:#E9E6DE;color:#4A5468;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;padding:9px 13px">CAMPAIGN AGENTS</div>
+<div style="background:#E9E6DE;color:#4A5468;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;padding:9px 13px">REV OPS</div>
+<div style="background:#14213A;color:#F4F2ED;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;padding:9px 13px">GOVERNANCE</div>
+<div style="border:1px solid #2E6B4F;color:#2E6B4F;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;padding:8px 12px">SHIPPED</div>
+<div style="border:1px solid #C8102E;color:#C8102E;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;padding:8px 12px">BLOCKED</div>
+</div>
+</div>
+</div>
+
+<div style="background:#fff;border:1px solid #DDD9D0;padding:32px">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#C8102E;padding-bottom:10px">BOOK A TRAILMAP SESSION</div>
+<div style="font:800 24px/1.15 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:22px">One free hour. Bring your messiest problem.</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div>
+<div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#4A5468;padding-bottom:8px">NAME</div>
+<div style="border:1px solid #C9C4B8;background:#F4F2ED;padding:14px;font:400 15px/1 'Public Sans',sans-serif;color:#8A8375">Jordan Reyes</div>
+</div>
+<div>
+<div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#4A5468;padding-bottom:8px">WORK EMAIL — FOCUSED</div>
+<div style="border:1px solid #2F4B96;background:#fff;padding:14px;font:400 15px/1 'Public Sans',sans-serif;color:#14213A;box-shadow:0 0 0 3px rgba(47,75,150,.2)">jordan@company.com</div>
+</div>
+<div>
+<div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#C8102E;padding-bottom:8px">COMPANY — ERROR</div>
+<div style="border:1px solid #C8102E;background:#fff;padding:14px;font:400 15px/1 'Public Sans',sans-serif;color:#14213A"></div>
+<div style="font:400 13px/1.5 'Public Sans',sans-serif;color:#C8102E;padding-top:7px">Tell us where you ride — company name is required.</div>
+</div>
+<div>
+<div style="font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#4A5468;padding-bottom:8px">WHERE'S THE FRICTION?</div>
+<div style="border:1px solid #C9C4B8;background:#F4F2ED;padding:14px;font:400 15px/1.5 'Public Sans',sans-serif;color:#8A8375;min-height:76px">Campaign production takes three weeks and four handoffs…</div>
+</div>
+<div style="display:flex;align-items:center;gap:11px">
+<div style="width:20px;height:20px;border:2px solid #14213A;background:#14213A;display:flex;align-items:center;justify-content:center"><div style="width:7px;height:7px;background:#F4F2ED"></div></div>
+<div style="font:400 14px/1.4 'Public Sans',sans-serif;color:#4A5468">Send me the 90-day roadmap template</div>
+</div>
+<div style="background:#C8102E;color:#fff;font:700 14px/1 Archivo,sans-serif;letter-spacing:.05em;padding:18px 26px;text-align:center">CLAIM THE HOUR</div>
+<div style="font:400 12.5px/1.5 'Public Sans',sans-serif;color:#8A8375;text-align:center">No deck, no discovery theater. You'll leave with an architecture sketch.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0;background:#fff">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">06 — CARDS &amp; DATA</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:32px">Content blocks</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-bottom:36px">
+<div style="border:1px solid #DDD9D0;background:#F4F2ED">
+<div style="border-top:4px solid #2E6B4F;padding:26px">
+<div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px">
+<div style="display:flex;align-items:center;gap:10px"><div style="width:14px;height:14px;border-radius:50%;background:#2E6B4F"></div><span style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2E6B4F">GREEN · EASY</span></div>
+<span style="font:400 12px/1 'IBM Plex Mono',monospace;color:#6B6558">2–3 WKS</span>
+</div>
+<div style="font:700 22px/1.2 Archivo,sans-serif;padding-bottom:10px">AI Trailmap: Readiness &amp; Roadmap</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468;padding-bottom:20px">Tool and workflow audit, AI-readiness score, prioritized use cases, a phased Trailmap with 90-day next steps.</div>
+<div style="font:800 28px/1 Archivo,sans-serif;color:#14213A">$12,500</div>
+</div>
+</div>
+<div style="border:1px solid #DDD9D0;background:#fff">
+<div style="border-top:4px solid #2F4B96;padding:26px">
+<div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px">
+<div style="display:flex;align-items:center;gap:10px"><div style="width:13px;height:13px;background:#2F4B96"></div><span style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2F4B96">BLUE · INTERMEDIATE</span></div>
+<span style="font:400 12px/1 'IBM Plex Mono',monospace;color:#6B6558">4–6 WKS</span>
+</div>
+<div style="font:700 22px/1.2 Archivo,sans-serif;padding-bottom:10px">Team AI Training Sprint</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468;padding-bottom:20px">Hands-on workshops on LLMs, prompting, and agentic workflows — built around your team's real tools and tasks.</div>
+<div style="font:800 28px/1 Archivo,sans-serif;color:#14213A">$28–42K</div>
+</div>
+</div>
+<div style="border:1px solid #14213A;background:#14213A">
+<div style="border-top:4px solid #C8102E;padding:26px">
+<div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px">
+<div style="display:flex;align-items:center;gap:10px"><div style="width:13px;height:13px;background:#EE7A82;transform:rotate(45deg)"></div><span style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#EE7A82">PRO-LINE</span></div>
+<span style="font:400 12px/1 'IBM Plex Mono',monospace;color:#7A8CAB">MONTHLY</span>
+</div>
+<div style="font:700 22px/1.2 Archivo,sans-serif;color:#F4F2ED;padding-bottom:10px">Fractional AI Advisor</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#9FB0D0;padding-bottom:20px">Executive-grade AI training and workflow guidance on retainer — coaching, policy, vendor-neutral tool calls.</div>
+<div style="font:800 28px/1 Archivo,sans-serif;color:#F4F2ED">$6–12K<span style="font:400 15px/1 'IBM Plex Mono',monospace;color:#7A8CAB"> /MO</span></div>
+</div>
+</div>
+</div>
+
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#8A8375;padding-bottom:18px">METRIC DISPLAY — ARCHIVO 800, MONO CAPTION, NO ICONS</div>
+<div style="background:#14213A;padding:40px 36px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
+<div><div style="font:800 46px/1 Archivo,sans-serif;letter-spacing:-.02em;color:#F4F2ED">50B+</div><div style="font:500 12px/1.5 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#9FB0D0;padding-top:10px">PEAK MESSAGES / MONTH ON PLATFORMS LED</div></div>
+<div><div style="font:800 46px/1 Archivo,sans-serif;letter-spacing:-.02em;color:#F4F2ED">$6M+</div><div style="font:500 12px/1.5 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#9FB0D0;padding-top:10px">ANNUAL OPERATIONAL SAVINGS DELIVERED</div></div>
+<div><div style="font:800 46px/1 Archivo,sans-serif;letter-spacing:-.02em;color:#F4F2ED">2</div><div style="font:500 12px/1.5 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#9FB0D0;padding-top:10px">AI PATENTS — MULTI-AGENT &amp; MCP</div></div>
+<div><div style="font:800 46px/1 Archivo,sans-serif;letter-spacing:-.02em;color:#EE7A82">1 hour</div><div style="font:500 12px/1.5 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#9FB0D0;padding-top:10px">TO A WORKING ARCHITECTURE OVERVIEW</div></div>
+</div>
+<div style="font:400 13.5px/1.6 'Public Sans',sans-serif;color:#4A5468;padding-top:14px;max-width:74ch">Figures always carry a unit and a source. Exactly one figure per metric band may use the accent — on navy that means Blaze Light (#EE7A82), never pure crimson — the one the speaker wants remembered.</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">07 — NAVIGATION &amp; FOOTER</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:32px">Frame patterns</div>
+
+<div style="border:1px solid #DDD9D0;margin-bottom:28px">
+<div style="background:#F4F2ED;display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:2px solid #14213A">
+<div style="display:flex;align-items:center;gap:14px"><div style="width:40px;flex:none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.6 62.6" style="display:block;width:100%;height:auto" role="img" aria-label="Switchback Strategy compact mark"><circle cx="8.5" cy="54.1" r="8.5" fill="#2E6B4F"/><circle cx="23.5" cy="39.1" r="8.5" fill="#2F4B96"/><circle cx="38.5" cy="24.1" r="8.5" fill="#14213A"/><path d="M51.6 0 L55.1 7.5 L62.6 11 L55.1 14.5 L51.6 22 L48.1 14.5 L40.6 11 L48.1 7.5 Z" fill="#C8102E"/></svg></div><div style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.09em;color:#14213A">SWITCHBACK STRATEGY</div></div>
+<div style="display:flex;align-items:center;gap:26px;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#4A5468">
+<span style="color:#14213A;border-bottom:2px solid #C8102E;padding-bottom:4px">TRAIL MAP</span><span>APPROACH</span><span>PROOF</span><span>ABOUT</span>
+<span style="background:#14213A;color:#F4F2ED;padding:12px 18px">TRAILMAP SESSION</span>
+</div>
+</div>
+<div style="background:#fff;padding:14px 28px;font:400 12.5px/1 'IBM Plex Mono',monospace;color:#8A8375">Sticky on scroll · 2px navy baseline rule · active item marked with crimson underline · mobile collapses to a full-height navy panel</div>
+</div>
+
+<div style="background:#14213A;padding:48px 40px 32px">
+<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid #2A3A5E">
+<div>
+<div style="display:flex;align-items:center;gap:13px;padding-bottom:16px"><div style="width:44px;flex:none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.6 62.6" style="display:block;width:100%;height:auto" role="img" aria-label="Switchback Strategy compact mark"><circle cx="8.5" cy="54.1" r="8.5" fill="#F4F2ED"/><circle cx="23.5" cy="39.1" r="8.5" fill="#F4F2ED"/><circle cx="38.5" cy="24.1" r="8.5" fill="#F4F2ED"/><path d="M51.6 0 L55.1 7.5 L62.6 11 L55.1 14.5 L51.6 22 L48.1 14.5 L40.6 11 L48.1 7.5 Z" fill="#EE7A82"/></svg></div><div style="font:800 15px/1 Archivo,sans-serif;letter-spacing:.09em;color:#F4F2ED">SWITCHBACK STRATEGY</div></div>
+<div style="font:400 15px/1.6 'Public Sans',sans-serif;color:#9FB0D0;max-width:34ch">AI training, onboarding, and workflow optimization, sized for mid-market economics.</div>
+<div style="font:400 13px/1.8 'IBM Plex Mono',monospace;color:#7A8CAB;padding-top:18px">allen@switchbackstrategy.ai<br>Indianapolis, IN</div>
+</div>
+<div>
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#EE7A82;padding-bottom:16px">TRAIL MAP</div>
+<div style="display:flex;flex-direction:column;gap:11px;font:400 14.5px/1.3 'Public Sans',sans-serif;color:#9FB0D0"><div>Readiness Trailmap</div><div>Training Sprint</div><div>Workflow Optimization</div><div>Pro-Line</div></div>
+</div>
+<div>
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#EE7A82;padding-bottom:16px">COMPANY</div>
+<div style="display:flex;flex-direction:column;gap:11px;font:400 14.5px/1.3 'Public Sans',sans-serif;color:#9FB0D0"><div>Approach</div><div>About Allen</div><div>Writing</div><div>Contact</div></div>
+</div>
+<div>
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#EE7A82;padding-bottom:16px">START</div>
+<div style="font:400 14.5px/1.5 'Public Sans',sans-serif;color:#9FB0D0;padding-bottom:16px">One free hour, one hard problem.</div>
+<div style="background:#F4F2ED;color:#14213A;font:700 13px/1 Archivo,sans-serif;letter-spacing:.05em;padding:14px 18px;display:inline-block">BOOK A SESSION</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;padding-top:22px">
+<div style="font:400 12px/1.6 'IBM Plex Mono',monospace;color:#7A8CAB;max-width:70ch">Switchback Strategy LLC is an independent consultancy. Any platform or vendor names mentioned in our work are used for compatibility context only — we are not affiliated with, sponsored by, or endorsed by any of them.</div>
+<div style="display:flex;justify-content:space-between;font:400 12px/1 'IBM Plex Mono',monospace;color:#7A8CAB">
+<span>© 2026 SWITCHBACK STRATEGY LLC</span><span>PIVOT. PERFECT. ASCEND.</span>
+</div>
+</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;border-bottom:1px solid #DDD9D0;background:#fff">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">08 — ICONS, IMAGERY, MOTION</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:32px">Supporting rules</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+<div style="border-top:3px solid #14213A;padding-top:18px">
+<div style="font:700 19px/1.25 Archivo,sans-serif;padding-bottom:12px">Icons</div>
+<div style="display:flex;gap:14px;padding-bottom:16px">
+<div style="width:34px;height:34px;border:2px solid #14213A;border-radius:50%"></div>
+<div style="width:34px;height:34px;border:2px solid #14213A"></div>
+<div style="width:30px;height:30px;border:2px solid #14213A;transform:rotate(45deg);margin:2px"></div>
+<div style="width:34px;height:34px;border-top:2px solid #14213A;border-right:2px solid #14213A;transform:rotate(45deg)"></div>
+</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Geometric line set on a 24px grid, 2px stroke, square caps, no fills. Use Lucide (MIT) as the base library and restrict it to navigation, status, and system affordances — the trail-grade shapes are the only brand marks. Never illustrative, never colored except by state.</div>
+</div>
+<div style="border-top:3px solid #2E6B4F;padding-top:18px">
+<div style="font:700 19px/1.25 Archivo,sans-serif;padding-bottom:12px">Photography</div>
+<div style="background:repeating-linear-gradient(135deg,#E9E6DE 0 9px,#F4F2ED 9px 18px);border:1px solid #DDD9D0;aspect-ratio:16/10;display:flex;align-items:flex-end;padding:14px;margin-bottom:16px"><div style="font:500 11px/1.4 'IBM Plex Mono',monospace;color:#6B6558">SHOT LIST — see rules at right</div></div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Shoot four: a rider mid-switchback from below the turn; an empty bermed corner at dawn; hands on a bar-mounted map or GPS; Allen in a working session at a whiteboard. Cool morning light, desaturated greens, no lens flare, no stock-photo handshakes. Full-bleed at 16:9 or 3:4; text only over the navy 70% scrim.</div>
+</div>
+<div style="border-top:3px solid #C8102E;padding-top:18px">
+<div style="font:700 19px/1.25 Archivo,sans-serif;padding-bottom:12px">Motion &amp; space</div>
+<div style="font:400 13px/1.8 'IBM Plex Mono',monospace;color:#6B6558;padding-bottom:14px">--space: 4 8 12 16 24 32 48 64 96 px<br>--radius: 0 (2px max in app)<br>--ease: cubic-bezier(.2,.8,.2,1)<br>--dur: 160ms UI / 280ms reveal</div>
+<div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Motion moves up and to the right: 12px rise plus fade on reveal, never scale or bounce. Stage tracks fill left to right. One transition per interaction; respect reduced-motion by dropping to opacity only.</div>
+</div>
+</div>
+</div>
+
+<div style="padding:64px 72px;background:#E9E6DE">
+<div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:#8A8375;padding-bottom:8px">09 — SCALING TO THE CLIENT APP</div>
+<div style="font:800 34px/1.1 Archivo,sans-serif;letter-spacing:-.02em;padding-bottom:8px">What carries over in six months</div>
+<div style="font:400 16px/1.55 'Public Sans',sans-serif;color:#4A5468;max-width:74ch;padding-bottom:32px">The app is the same system at higher density: time tracking, booking, agent Q&amp;A, and engagement progress. Notes for whoever builds it.</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+<div style="background:#fff;border:1px solid #DDD9D0;padding:24px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2F4B96;padding-bottom:12px">DENSITY</div><div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Body steps to 16px, labels to 11px, spacing scale drops one step. Radius may go to 2px; nothing rounder.</div></div>
+<div style="background:#fff;border:1px solid #DDD9D0;padding:24px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2F4B96;padding-bottom:12px">PROGRESS</div><div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">The stage track is the app's home screen: switchbacks completed, current turn, what's next, hours logged against each.</div></div>
+<div style="background:#fff;border:1px solid #DDD9D0;padding:24px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2F4B96;padding-bottom:12px">AGENT VOICE</div><div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">Agent messages sit on paper with a navy left rule; Allen's replies sit on white. Agent-suggested considerations are flagged with the blue square, never a sparkle.</div></div>
+<div style="background:#fff;border:1px solid #DDD9D0;padding:24px"><div style="font:600 11px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#2F4B96;padding-bottom:12px">TOUCH</div><div style="font:400 15px/1.55 'Public Sans',sans-serif;color:#4A5468">44px minimum targets, thumb-reachable primary action, bottom tab bar in navy with crimson active marker.</div></div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
