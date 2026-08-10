@@ -25,33 +25,33 @@ const SIZE_LABEL = {
 
 // Which trail to lead with, by company size — overridden by keyword signals below.
 const SIZE_TRAIL = {
-  '1-50': 'Readiness Trailmap',
-  '51-200': 'Team AI Training Sprint',
-  '201-1000': 'Workflow Optimization Build',
-  '1000+': 'Fractional AI Advisor'
+  '1-50': 'Green Trail',
+  '51-200': 'Green Trail',
+  '201-1000': 'Blue Trail',
+  '1000+': 'Pro-Line'
 };
 
 const SIGNALS = [
-  { trail: 'Team AI Training Sprint', re: /\b(train|training|upskill|enable|enablement|onboard|literacy|teach|workshop)\b/i },
-  { trail: 'Workflow Optimization Build', re: /\b(workflow|automat|process|handoff|approval|manual|integrat|pipeline|ops)\b/i },
-  { trail: 'Fractional AI Advisor', re: /\b(policy|governance|strategy|roadmap|advisor|leadership|board|compliance|risk)\b/i },
-  { trail: 'Readiness Trailmap', re: /\b(where to start|not sure|don't know|assess|audit|readiness|evaluate)\b/i }
+  { trail: 'Team AI Training Workshop', re: /\b(train|training|upskill|enable|enablement|onboard|literacy|teach|workshop)\b/i },
+  { trail: 'Pro-Line', re: /\b(policy|governance|advisor|fractional|retainer|leadership|board|compliance)\b/i },
+  { trail: 'Blue Trail', re: /\b(workflow|automat|process|handoff|approval|manual|integrat|pipeline|ops)\b/i },
+  { trail: 'Green Trail', re: /\b(where to start|not sure|don't know|assess|audit|readiness|evaluate|roadmap|strategy|storyboard)\b/i }
 ];
 
 const TRAIL_LINE = {
-  'Readiness Trailmap':
-    'Based on what you wrote, we will likely start with a Readiness Trailmap — a scored read on where you stand and a phased 90-day plan.',
-  'Team AI Training Sprint':
-    'Based on what you wrote, a Team AI Training Sprint is probably the first turn — hands-on sessions taught against your own tools.',
-  'Workflow Optimization Build':
-    'Based on what you wrote, this sounds like a Workflow Optimization Build — we take the worst process apart and rebuild it with your team.',
-  'Fractional AI Advisor':
+  'Green Trail':
+    'Based on what you wrote, we will likely start with a Green Trail — a scored read on where you stand, a phased roadmap, and dev-ready user stories.',
+  'Team AI Training Workshop':
+    'Based on what you wrote, our Team AI Training Workshop is probably the first turn — hands-on sessions taught against your own tools, standalone or bundled with a Green Trail roadmap.',
+  'Blue Trail':
+    'Based on what you wrote, this sounds like a Blue Trail — we take one workflow end-to-end into production, guardrailed and integrated, and you keep the source.',
+  'Pro-Line':
     'Based on what you wrote, the Pro-Line fractional engagement may fit best — ongoing judgment as your team gets more ambitious.'
 };
 
 function recommendTrail(goal, size) {
   for (const s of SIGNALS) if (s.re.test(goal)) return s.trail;
-  return SIZE_TRAIL[size] || 'Readiness Trailmap';
+  return SIZE_TRAIL[size] || 'Green Trail';
 }
 
 const json = (body, status = 200) =>
