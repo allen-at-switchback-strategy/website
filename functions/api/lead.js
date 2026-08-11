@@ -42,7 +42,7 @@ const TRAIL_LINE = {
   'Green Trail':
     'Based on what you wrote, we will likely start with a Green Trail — a scored read on where you stand, a phased roadmap, and dev-ready user stories.',
   'Team AI Training Workshop':
-    'Based on what you wrote, our Team AI Training Workshop is probably the first turn — hands-on sessions taught against your own tools, standalone or bundled with a Green Trail roadmap.',
+    'Based on what you wrote, our Team AI Training Workshop is probably the first turn — hands-on sessions taught against your own tools, standalone or bundled into any trail at handoff.',
   'Blue Trail':
     'Based on what you wrote, this sounds like a Blue Trail — we take one workflow end-to-end into production, guardrailed and integrated, and you keep the source.',
   'Pro-Line':
