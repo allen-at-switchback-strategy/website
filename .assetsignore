@@ -1,0 +1,12 @@
+**/.git
+**/.git/**
+**/.DS_Store
+**/node_modules
+.wrangler
+src
+functions
+wrangler.jsonc
+.assetsignore
+.gitignore
+README.md
+LICENSE
